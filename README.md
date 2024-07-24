@@ -39,5 +39,5 @@ Simplify your reading and listening with **Summarize**:
 
 3. Start the development server:
 
-   `npm start`
+   `npm run start`
 
