@@ -1,4 +1,4 @@
-# Summarize
+# Ai To Summarize
 
 Simplify your reading and listening with **Summarize**:
 
