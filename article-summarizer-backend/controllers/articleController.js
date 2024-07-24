@@ -1,6 +1,6 @@
 const axios = require('axios');
 const rapidApiKey = 'dfb75d1cffmshc7679171684f9a8p1f08cbjsna8cdc1039a2e';
-const mediumApiKey = 'sk-proj-ltmqIUFIgUtN0D9F5g9YT3BlbkFJEuREO4mev5IMWsRk9zjj'; 
+const mediumApiKey = 'sk-proj-P5xJbmYvRRBlnHBGC0GZT3BlbkFJpJw1EvxdOcMDV6ncN0i5'; 
 
 const getArticleSummary = async (req, res) => {
   const { articleUrl } = req.body;
