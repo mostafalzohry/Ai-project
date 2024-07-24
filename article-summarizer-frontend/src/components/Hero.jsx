@@ -37,7 +37,7 @@ const Hero = () => {
       <h1 className='head_text'>
         {/* See the magic with  */}
         <br className='max-md:hidden' />
-        <span className='custom_gradient'>AI-Powered Customer&nbsp; Service Chatbot</span>
+        <span className='custom_gradient'>AI-Powered</span>
       </h1>
       <h2 className='desc'>
         Simplify your reading and listening with Summarize:
