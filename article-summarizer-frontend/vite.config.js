@@ -20,31 +20,7 @@ export default defineConfig({
   base: './',
 
   build: {
-    emptyOutDir: true,
-    outDir: Path.resolve(__dirname, './build'),
-    rollupOptions: {
-      input: {
-        ...pagesInput,
-      },
-      output: {
-        assetFileNames: (assetInfo) => {
-          let info = assetInfo.name.split('.');
-          let extType = info[info.length - 1];
-
-          if (/svg|png|jpe?g|tiff|gif|webp|avif|bmp|ico/i.test(extType)) {
-            extType = 'images';
-          } else if (/eot|otf|ttf|fnt|woff|woff2/.test(extType)) {
-            extType = 'fonts';
-          } else if (/css/.test(extType)) {
-            extType = 'css';
-          }
-          return `assets/${extType}/[name]-[hash][extname]`;
-        },
-
-        entryFileNames: 'assets/js/[name]-[hash].js',
-        chunkFileNames: 'assets/js/[name]-[hash].js',
-      },
-    },
+    outDir: 'dist',
   },
   plugins: [
     react(),

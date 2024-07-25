@@ -53,7 +53,7 @@ const Demo = () => {
           body: JSON.stringify({ articleUrl: url }),
         });
       } else {
-        const fetchUrl = `https://article-summarizer-backend-6sr2o90uh-mostafalzohrys-projects.vercel.app/api/transcribe?videoUrl=${encodeURIComponent(
+        const fetchUrl = `https://article-summarizer-backend-five.vercel.app/api/transcribe?videoUrl=${encodeURIComponent(
           url
         )}`;
         response = await fetch(fetchUrl, {
@@ -115,7 +115,7 @@ const Demo = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5500/api/generatevoice",
+        "https://article-summarizer-backend-five.vercel.app/api/generatevoice",
         {
           text: result,
           voice: "alloy",
