@@ -47,13 +47,13 @@ const Demo = () => {
       let response;
 
       if (activeTab === "article") {
-        response = await fetch("http://localhost:5500/api/summarize", {
+        response = await fetch("https://article-summarizer-backend-five.vercel.app/api/summarize", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ articleUrl: url }),
         });
       } else {
-        const fetchUrl = `http://localhost:5500/api/transcribe?videoUrl=${encodeURIComponent(
+        const fetchUrl = `https://article-summarizer-backend-6sr2o90uh-mostafalzohrys-projects.vercel.app/api/transcribe?videoUrl=${encodeURIComponent(
           url
         )}`;
         response = await fetch(fetchUrl, {
