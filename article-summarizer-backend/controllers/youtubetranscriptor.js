@@ -1,5 +1,5 @@
 const axios = require('axios');
-const rapidApiKey = 'dfb75d1cffmshc7679171684f9a8p1f08cbjsna8cdc1039a2e';
+const rapidApiKey = '570d974e07msh31d64ec8d0e5e0dp19187djsn805ceb173e4d';
 
 const getVideoTranscript = async (req, res) => {
   console.log('Received request for /transcribe');
